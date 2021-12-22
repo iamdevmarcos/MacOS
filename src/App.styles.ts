@@ -17,8 +17,40 @@ export const MenuTop = styled.div`
     position:fixed;
     width:100vw;
     top:0;
-    height:25px;
-    background-color:#CCC;
+    height:30px;
+    background-color:rgb(235, 115, 141, 0.5);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+`;
+
+export const MenuTopLeft = styled.div`
+    margin:0;
+    padding:0;
+`;
+export const MenuTopRight = styled.div`
+`;
+
+export const MenuTopList = styled.ul`
+    margin:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    list-style:none;
+    color:#FFF;
+    height:30px;
+
+    li {
+       text-shadow: 1px 1px 4px #333;
+       padding:10px;
+       font-size:14px;
+       transition: all ease 0.2s;
+
+       &:hover {
+           cursor:pointer;
+           background-color:#333;
+       }
+    }
 `;
 
 export const MenuBottom = styled.div`
