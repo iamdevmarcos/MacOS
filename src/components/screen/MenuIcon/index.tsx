@@ -1,7 +1,11 @@
 import * as C from './styles';
 
-export const MenuIcon = () => {
+type Props = {
+    icon: string;
+}
+
+export const MenuIcon = ({ icon }: Props) => {
     return (
-        <C.Container></C.Container>
+        <C.Container icon={icon}></C.Container>
     );
 }

@@ -57,7 +57,10 @@ const App = () => {
 
       <C.MenuBottom>
         {MenuIconList.map((item, index) => (
-          <MenuIcon key={index} />
+          <MenuIcon
+            key={index}
+            icon={item.icon}
+          />
         ))}
       </C.MenuBottom>
     </C.Container>
