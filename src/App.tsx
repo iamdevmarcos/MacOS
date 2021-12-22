@@ -6,20 +6,7 @@ const App = () => {
       <C.MenuTop>...</C.MenuTop>
 
       <C.MenuBottom>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
-        <C.Icon></C.Icon>
+        
       </C.MenuBottom>
     </C.Container>
   ); 
