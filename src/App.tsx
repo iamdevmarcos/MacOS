@@ -3,15 +3,15 @@ import * as C from './App.styles';
 
 import { MenuIcon } from './components/screen/MenuIcon';
 
-const App = () => {
-  const [iconList, setIconList] = useState([{},{},{},{},{},{},{},{},{},{},{},{},{},{}]);
+import { MenuIconList } from './utils/MenuIconList';
 
+const App = () => {
   return (
     <C.Container>
       <C.MenuTop>...</C.MenuTop>
 
       <C.MenuBottom>
-        {iconList.map((item, index) => (
+        {MenuIconList.map((item, index) => (
           <MenuIcon key={index} />
         ))}
       </C.MenuBottom>
