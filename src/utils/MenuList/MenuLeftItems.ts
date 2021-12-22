@@ -1,4 +1,4 @@
-export const MenuTopList = [
+export const MenuLeftItems = [
     {title: 'Mail'},
     {title: 'File'},
     {title: 'Edit'},
@@ -6,5 +6,4 @@ export const MenuTopList = [
     {title: 'Mailbox'},
     {title: 'Message'},
     {title: 'Help'},
-    {title: 'Github'},
 ];

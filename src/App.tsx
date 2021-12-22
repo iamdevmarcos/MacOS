@@ -4,7 +4,8 @@ import * as C from './App.styles';
 import { MenuIcon } from './components/screen/MenuIcon';
 
 import { MenuIconList } from './utils/MenuIconList';
-import { MenuTopList } from './utils/MenuList/MenuTopList';
+import { MenuLeftItems } from './utils/MenuList/MenuLeftItems';
+import { MenuRightItems } from './utils/MenuList/MenuRightItems';
 
 const App = () => {
   return (
@@ -15,8 +16,8 @@ const App = () => {
             <li>
               <img src="/assets/images/apple-logo.png" />
             </li>
-            {MenuTopList.map((item, index) => (
-              <li>{item.title}</li>
+            {MenuLeftItems.map((item, index) => (
+              <li key={index}>{item.title}</li>
             ))}
           </C.MenuTopList>
         </C.MenuTopLeft>
@@ -34,8 +35,9 @@ const App = () => {
             <li>
               <img src="/assets/images/icons/github.png" />
             </li>
-            <li>Mon Jun 22</li>
-            <li>9:41 AM</li>
+            {MenuRightItems.map((item, index) => (
+              <li key={index}>{item.title}</li>
+            ))}
           </C.MenuTopList>
         </C.MenuTopRight>
       </C.MenuTop>
