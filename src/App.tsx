@@ -4,6 +4,7 @@ import * as C from './App.styles';
 import { MenuIcon } from './components/screen/MenuIcon';
 
 import { MenuIconList } from './utils/MenuIconList';
+import { MenuTopList } from './utils/MenuList/MenuTopList';
 
 const App = () => {
   return (
@@ -14,13 +15,9 @@ const App = () => {
             <li>
               <img src="/assets/images/apple-logo.png" />
             </li>
-            <li>Mail</li>
-            <li>File</li>
-            <li>Edit</li>
-            <li>View</li>
-            <li>Mailbox</li>
-            <li>Message</li>
-            <li>Help</li>
+            {MenuTopList.map((item, index) => (
+              <li>{item.title}</li>
+            ))}
           </C.MenuTopList>
         </C.MenuTopLeft>
         <C.MenuTopRight>
