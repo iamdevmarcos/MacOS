@@ -14,13 +14,15 @@ export const Container = styled.div`
         justify-content:center;
     }
 
-    img {
-        width:100px;
-        height:100px;
+    .loading {
+        margin-top:200px;
+        width:50px;
+        height:50px;
     }
 
-    p {
-        margin-top:50px;
-        color:#FFF;
+    img {
+        position:fixed;
+        width:100px;
+        height:100px;
     }
 `;
