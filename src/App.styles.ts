@@ -30,6 +30,9 @@ export const MenuTopLeft = styled.div`
     }
 `;
 export const MenuTopRight = styled.div`
+    ul {
+        padding:0px 20px;
+    }
 `;
 
 export const MenuTopList = styled.ul`
