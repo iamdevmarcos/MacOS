@@ -11,7 +11,9 @@ const App = () => {
       <C.MenuTop>
         <C.MenuTopLeft>
           <C.MenuTopList>
-            <li></li>
+            <li>
+              <img src="/assets/images/apple-logo.png" />
+            </li>
             <li>Mail</li>
             <li>File</li>
             <li>Edit</li>

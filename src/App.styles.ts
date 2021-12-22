@@ -25,8 +25,9 @@ export const MenuTop = styled.div`
 `;
 
 export const MenuTopLeft = styled.div`
-    margin:0;
-    padding:0;
+    ul {
+        padding:0px 10px;
+    }
 `;
 export const MenuTopRight = styled.div`
 `;
@@ -45,6 +46,14 @@ export const MenuTopList = styled.ul`
        padding:10px;
        font-size:14px;
        transition: all ease 0.2s;
+
+       img {
+           width:16px;
+           height:16px;
+           display:flex;
+           align-items:center;
+           justify-content:center;
+       }
 
        &:hover {
            cursor:pointer;
