@@ -1,3 +1,16 @@
 export const MenuIconList = [
-    {},{},{},{},{},{},{},{},{},{},{},{},{},{}
+    {icon: 'spotify'},
+    {icon: 'discord'},
+    {icon: 'kindle'},
+    {icon: 'mail'},
+    {icon: 'netflix'},
+    {icon: 'photos'},
+    {icon: 'photoshop'},
+    {icon: 'safari'},
+    {icon: 'telegram'},
+    {icon: 'vlc'},
+    {icon: 'discord'},
+    {icon: 'kindle'},
+    {icon: 'photoshop'},
+    {icon: 'mail'},
 ]
