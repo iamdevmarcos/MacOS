@@ -1,28 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    background-color:#0000FF;
     min-height:100vh;
+    background-image: url('/assets/images/bg.jpg');
+    bacgrkound-position:center;
+    background-size:cover;
     display:flex;
     align-items:center;
     justify-content:center;
 
-    .loadingArea {
+    .content {
         display:flex;
-        flex-direction:column;
         align-items:center;
         justify-content:center;
-    }
+        width:100vw;
+        height:100vh;
+        background-color:transparent;
+        backdrop-filter:blur(20px);
 
-    .loading {
-        margin-top:200px;
-        width:50px;
-        height:50px;
-    }
-
-    img {
-        position:fixed;
-        width:100px;
-        height:100px;
+        span {
+            color:#FFF;
+            font-size:200px;
+            font-weight:bold;
+        }
     }
 `;

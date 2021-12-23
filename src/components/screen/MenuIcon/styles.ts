@@ -16,7 +16,7 @@ export const Container = styled.div(({ icon }: ContainerProps) => (`
     
     &&:nth-last-child(2) {
         border-left:1px solid #CCC;
-        
+        position:fixed;
     }
     
     &&:hover {
