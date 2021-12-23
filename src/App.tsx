@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import * as C from './App.styles';
 
 import { Loading } from './components/common/Loading';
+import { WelcomeScreen } from './components/common/WelcomeScreen';
 import { MenuIcon } from './components/screen/MenuIcon';
 
 import { MenuIconList } from './utils/MenuIconList';
@@ -10,15 +11,21 @@ import { MenuRightItems } from './utils/MenuList/MenuRightItems';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [welcomeScreen, setWelcomeScreen] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+      setWelcomeScreen(true);
+    }, 3500);
   }, []);
 
   if(loading) {
     return (<Loading />);
+  }
+
+  if(!loading && welcomeScreen === true) {
+    return (<WelcomeScreen />);
   }
 
   return (
