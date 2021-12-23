@@ -13,8 +13,12 @@ export const Container = styled.div(({ icon }: ContainerProps) => (`
     margin:10px 5px;
     cursor:pointer;
     transition: all ease 0.2s;
-    border-radius:10px;
-
+    
+    &&:nth-last-child(2) {
+        border-left:1px solid #CCC;
+        
+    }
+    
     &&:hover {
         width:100px;
         height:100px;

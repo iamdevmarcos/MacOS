@@ -17,7 +17,7 @@ export const MenuTop = styled.div`
     position:fixed;
     width:100vw;
     top:0;
-    height:30px;
+    height:40px;
     background-color:rgb(67, 14, 166, 0.8);
     display:flex;
     align-items:center;
@@ -45,10 +45,10 @@ export const MenuTopList = styled.ul`
     height:30px;
 
     li {
-       text-shadow: 1px 1px 4px #333;
+    //    text-shadow: 1px 1px 4px #333;
        padding:10px;
        font-size:14px;
-       transition: all ease 0.2s;
+       transition: all ease 0.1s;
 
        img {
            width:16px;
@@ -60,7 +60,8 @@ export const MenuTopList = styled.ul`
 
        &:hover {
            cursor:pointer;
-           background-color:#333;
+           background-color:#25CE3A;
+           border-radius:5px;
        }
     }
 `;
