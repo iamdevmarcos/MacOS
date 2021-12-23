@@ -5,7 +5,7 @@ export const Container = styled.div`
     padding:0;
     box-sizing:border-box;
     min-height:100vh;
-    background-image: url('/assets/images/wallpaper.jpg');
+    background-image: url('/assets/images/bg.jpg');
     background-position:center;
     background-size:cover;
     display:flex;
