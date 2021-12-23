@@ -11,17 +11,22 @@ import { MenuRightItems } from './utils/MenuList/MenuRightItems';
 
 const App = () => {
   const [loading, setLoading] = useState(true);
+  const [loadingFadeOut, setLoadingFadeOut] = useState(false);
   const [welcomeScreen, setWelcomeScreen] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
       setWelcomeScreen(true);
-    }, 3500);
+    }, 5000);
+
+    setTimeout(() => {
+      setLoadingFadeOut(true);
+    }, 3000);
   }, []);
 
   if(loading) {
-    return (<Loading />);
+    return (<Loading fadeOut={loadingFadeOut} />);
   }
 
   if(!loading && welcomeScreen === true) {
