@@ -18,7 +18,7 @@ export const MenuTop = styled.div`
     width:100vw;
     top:0;
     height:30px;
-    background-color:rgb(235, 115, 141, 0.5);
+    background-color:rgb(67, 14, 166, 0.8);
     display:flex;
     align-items:center;
     justify-content:space-between;
@@ -66,7 +66,7 @@ export const MenuTopList = styled.ul`
 `;
 
 export const MenuBottom = styled.div`
-    background-image: linear-gradient(to right, rgba(138, 87, 190, 0.1), rgba(135, 92, 198, 0.4));
+    background-color:rgb(67, 14, 166, 0.3);
     position:fixed;
     max-width:980px;
     height:70px;
