@@ -30,10 +30,9 @@ export const Container = styled.div(({ fadeOut }: ContainerProps) => (`
         align-items:center;
         justify-content:center;
 
-        span {
-            color:#FFF;
-            font-size:200px;
-            font-weight:bold;
+        .hello {
+            width:500px;
+            height:500px;
         }
     }
 `));
