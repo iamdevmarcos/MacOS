@@ -9,9 +9,17 @@ export const Loading = ({ fadeOut }: Props) => {
         <C.Container fadeOut={fadeOut}>
             <div className="bg">
                 <div className="loadingArea">
-                    <img src="/assets/images/apple-logo.png" alt="logo" />
-                    
-                    <img className="loading" src="/assets/images/loading.gif" alt="loading" />
+                    <img
+                        className="logo"
+                        src="/assets/images/apple-logo.png"
+                        alt="logo"
+                    />
+
+                    <img
+                        className="loading"
+                        src="/assets/images/loading.gif"
+                        alt="loading"
+                    />
                 </div>
             </div>
         </C.Container>

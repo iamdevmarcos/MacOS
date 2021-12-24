@@ -32,16 +32,17 @@ export const Container = styled.div(({ fadeOut }: ContainerProps) => (`
         justify-content:center;
     }
     
-    .loading {
-        margin-top:200px;
-        width:50px;
-        height:50px;
-        position:fixed;
-    }
-    
-    img {
+    .logo {
         position:fixed;
         width:100px;
         height:100px;
     }
+
+    .loading {
+        margin-top:300px;
+        width:50px;
+        height:50px;
+    }
+
+    
 `));
