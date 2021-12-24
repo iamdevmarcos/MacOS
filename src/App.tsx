@@ -13,7 +13,7 @@ const App = () => {
   const [loading, setLoading] = useState(true);
   const [loadingFadeOut, setLoadingFadeOut] = useState(false);
   const [welcomeScreen, setWelcomeScreen] = useState(false);
-  const [welcomeScreenFadeOut, setWelcomeScreenFadeOut] = useState(true);
+  const [welcomeScreenFadeOut, setWelcomeScreenFadeOut] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
@@ -26,8 +26,12 @@ const App = () => {
     }, 3000);
     
     setTimeout(() => {
-      setWelcomeScreen(false);
+      setWelcomeScreenFadeOut(true);
     }, 8000);
+
+    setTimeout(() => {
+      setWelcomeScreen(false);
+    }, 9000);
   }, []);
 
   if(loading) {
@@ -35,7 +39,7 @@ const App = () => {
   }
 
   if(!loading && welcomeScreen === true) {
-    return (<WelcomeScreen />);
+    return (<WelcomeScreen fadeOut={welcomeScreenFadeOut} />);
   }
 
   if(!loading && !welcomeScreen) {
