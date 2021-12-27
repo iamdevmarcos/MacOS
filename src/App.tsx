@@ -4,6 +4,7 @@ import * as C from './App.styles';
 import { Loading } from './components/common/Loading';
 import { WelcomeScreen } from './components/common/WelcomeScreen';
 import { MenuIcon } from './components/screen/MenuIcon';
+import { Window } from './components/common/Window';
 
 import { MenuIconList } from './utils/MenuIconList';
 import { MenuLeftItems } from './utils/MenuList/MenuLeftItems';
@@ -77,6 +78,8 @@ const App = () => {
           </C.MenuTopRight>
         </C.MenuTop>
   
+        <Window />
+
         <C.MenuBottom>
           {MenuIconList.map((item, index) => (
             <MenuIcon
