@@ -47,57 +47,59 @@ const App = () => {
     return (<WelcomeScreen fadeOut={welcomeScreenFadeOut} />);
   }
 
-  if(!loading && !welcomeScreen) {
-    return (
+  return (
       <C.Container>
-        <C.MenuTop>
-          <C.MenuTopLeft>
-            <C.MenuTopList>
-              <li>
-                <img src="/assets/images/apple-logo.png" />
-              </li>
-              {MenuLeftItems.map((item, index) => (
-                <li key={index}>{item.title}</li>
-              ))}
-            </C.MenuTopList>
-          </C.MenuTopLeft>
-          <C.MenuTopRight>
-            <C.MenuTopList>
-              <li>
-                <img src="/assets/images/icons/battery.png" />
-              </li>
-              <li>
-                <img src="/assets/images/icons/wifi.png" />
-              </li>
-              <li>
-                <img src="/assets/images/icons/search.png" />
-              </li>
-              <li>
-                <img src="/assets/images/icons/github.png" />
-              </li>
-              {MenuRightItems.map((item, index) => (
-                <li key={index}>{item.title}</li>
-              ))}
-            </C.MenuTopList>
-          </C.MenuTopRight>
-        </C.MenuTop>
-  
-        {windowOpen &&
-          <Window close={setWindowOpen} />
-        }
+        {!loading && !welcomeScreen &&
+        <>
+            <C.MenuTop>
+            <C.MenuTopLeft>
+              <C.MenuTopList>
+                <li>
+                  <img src="/assets/images/apple-logo.png" />
+                </li>
+                {MenuLeftItems.map((item, index) => (
+                  <li key={index}>{item.title}</li>
+                ))}
+              </C.MenuTopList>
+            </C.MenuTopLeft>
+            <C.MenuTopRight>
+              <C.MenuTopList>
+                <li>
+                  <img src="/assets/images/icons/battery.png" />
+                </li>
+                <li>
+                  <img src="/assets/images/icons/wifi.png" />
+                </li>
+                <li>
+                  <img src="/assets/images/icons/search.png" />
+                </li>
+                <li>
+                  <img src="/assets/images/icons/github.png" />
+                </li>
+                {MenuRightItems.map((item, index) => (
+                  <li key={index}>{item.title}</li>
+                ))}
+              </C.MenuTopList>
+            </C.MenuTopRight>
+          </C.MenuTop>
+    
+          {windowOpen &&
+            <Window close={setWindowOpen} />
+          }
 
-        <C.MenuBottom>
-          {MenuIconList.map((item, index) => (
-            <MenuIcon
-              key={index}
-              icon={item.icon}
-              onClick={handleWindowOpen}
-            />
-          ))}
-        </C.MenuBottom>
+          <C.MenuBottom>
+            {MenuIconList.map((item, index) => (
+              <MenuIcon
+                key={index}
+                icon={item.icon}
+                onClick={handleWindowOpen}
+              />
+            ))}
+          </C.MenuBottom>
+        </>
+        }
       </C.Container>
     ); 
   }
-}
 
 export default App;
