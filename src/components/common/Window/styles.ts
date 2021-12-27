@@ -7,6 +7,7 @@ export const Container = styled.div`
     position:relative;
     bottom:20px;
     border-radius:10px;
+    transition:all ease-in 2s;
 `;
 
 export const Top = styled.div`
@@ -34,6 +35,7 @@ export const Top = styled.div`
             width:10px;
             height:10px;
             opacity:0.5;
+            position:fixed;
         }
     }
 `;

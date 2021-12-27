@@ -16,6 +16,10 @@ const App = () => {
   const [welcomeScreen, setWelcomeScreen] = useState(false);
   const [welcomeScreenFadeOut, setWelcomeScreenFadeOut] = useState(false);
 
+  const [windowOpen, setWindowOpen] = useState(false);
+
+  const handleWindowOpen = () => setWindowOpen(!windowOpen);
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -78,13 +82,16 @@ const App = () => {
           </C.MenuTopRight>
         </C.MenuTop>
   
-        <Window />
+        {windowOpen &&
+          <Window />
+        }
 
         <C.MenuBottom>
           {MenuIconList.map((item, index) => (
             <MenuIcon
               key={index}
               icon={item.icon}
+              onClick={handleWindowOpen}
             />
           ))}
         </C.MenuBottom>
