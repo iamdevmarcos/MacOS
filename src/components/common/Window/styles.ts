@@ -7,7 +7,6 @@ export const Container = styled.div`
     position:relative;
     bottom:20px;
     border-radius:10px;
-    transition:all ease-in 2s;
 `;
 
 export const Top = styled.div`
@@ -17,6 +16,7 @@ export const Top = styled.div`
     padding:10px 10px;
     background-color:#E9DEE0;
     border-radius: 10px 10px 0px 0px;
+    transition:all ease-in 1s;
 
     div {
         display:flex;
@@ -27,7 +27,6 @@ export const Top = styled.div`
         margin-right:3px;
         width:10px;
         height:10px;
-        /* background-color:#FF6159; */
         border-radius:50%;
         cursor:pointer;
 

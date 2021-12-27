@@ -1,19 +1,25 @@
 import * as C from './styles';
+import { WindowIcon } from '../../../utils/WindowIcons';
 
-export const Window = () => {
+type Props = {
+    close: (value: boolean) => void;
+}
+
+export const Window = ({ close }: Props) => {
+    const handleCloseWindow = () => close(false);
+
     return (
         <C.Container>
             <C.Top>
-                <div
-                    style={{backgroundColor:'#FF6059'}}
-                >
-                    <img src="/assets/images/icons/window/close.png" alt="" />
-                </div>
-                <div
-                    style={{backgroundColor:'#FFBE30'}}
-                >
-                    <img src="/assets/images/icons/window/minimize.png" alt="" />
-                </div>
+                {WindowIcon.map((item, index) => (
+                    <div
+                        onClick={handleCloseWindow}
+                        style={{backgroundColor:`${item.bgColor}`}}
+                        key={index}
+                    >
+                        <img src={`/assets/images/icons/window/${item.title}.png`} alt="" />
+                    </div>
+                ))}
             </C.Top>
         </C.Container>
     );

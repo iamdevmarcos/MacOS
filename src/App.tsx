@@ -18,7 +18,7 @@ const App = () => {
 
   const [windowOpen, setWindowOpen] = useState(false);
 
-  const handleWindowOpen = () => setWindowOpen(!windowOpen);
+  const handleWindowOpen = () => setWindowOpen(true);
 
   useEffect(() => {
     setTimeout(() => {
@@ -83,7 +83,7 @@ const App = () => {
         </C.MenuTop>
   
         {windowOpen &&
-          <Window />
+          <Window close={setWindowOpen} />
         }
 
         <C.MenuBottom>
