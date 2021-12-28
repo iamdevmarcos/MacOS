@@ -74,9 +74,11 @@ const App = () => {
                 <li>
                   <img src="/assets/images/icons/search.png" />
                 </li>
-                <li>
-                  <img src="/assets/images/icons/github.png" />
-                </li>
+                <a href="https://github.com/iamdevmarcos/macOS" target="_blank">
+                  <li>
+                      <img src="/assets/images/icons/github.png" />
+                  </li>
+                </a>
                 {MenuRightItems.map((item, index) => (
                   <li key={index}>{item.title}</li>
                 ))}
