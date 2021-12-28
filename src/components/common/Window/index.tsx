@@ -21,6 +21,12 @@ export const Window = ({ close }: Props) => {
                     </div>
                 ))}
             </C.Top>
+
+            <C.Body>
+                <div className="content">
+                    <p>Coming Soon!</p>
+                </div>
+            </C.Body>
         </C.Container>
     );
 }

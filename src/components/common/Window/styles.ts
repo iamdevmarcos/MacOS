@@ -7,6 +7,7 @@ export const Container = styled.div`
     position:relative;
     bottom:20px;
     border-radius:10px;
+    opacity:0.9;
 `;
 
 export const Top = styled.div`
@@ -34,6 +35,28 @@ export const Top = styled.div`
             height:10px;
             opacity:0.5;
             position:fixed;
+        }
+    }
+`;
+
+export const Body = styled.div`
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #FF0000;
+    opacity:0.2; */
+
+    .content {
+        display:flex;
+        align-items: center;
+        justify-content: center;
+        color:#FFF;
+        height: calc(75vh - 35px);
+
+        p {
+            color:#000;
+            font-size:50px;
+            font-weight:bold;
         }
     }
 `;
