@@ -10,17 +10,13 @@ export const Container = styled.div(({ icon }: ContainerProps) => (`
     background-image: url('/assets/images/icons/appicons/${icon}.png');
     background-position: center;
     background-size:cover;
-    margin:10px 5px;
+    margin:10px 7px;
     cursor:pointer;
     transition: all ease 0.2s;
-    
-    &&:nth-last-child(2) {
-        border-left:1px solid #CCC;
-    }
     
     &&:hover {
         width:100px;
         height:100px;
-        margin-top:-30px; 
+        margin-top:-40px; 
     }
 `));

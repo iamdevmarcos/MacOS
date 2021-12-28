@@ -1,4 +1,4 @@
-export const MenuIconList = [
+export const MenuIconListLeft = [
     {icon: 'finder'},
     {icon: 'spotify'},
     {icon: 'discord'},
@@ -11,6 +11,9 @@ export const MenuIconList = [
     {icon: 'photoshop'},
     {icon: 'safari'},
     {icon: 'whatsapp'},
+]
+
+export const MenuIconListRight = [
     {icon: 'github_profile'},
     {icon: 'github_folder'},
 ]

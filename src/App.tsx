@@ -6,7 +6,8 @@ import { WelcomeScreen } from './components/common/WelcomeScreen';
 import { MenuIcon } from './components/screen/MenuIcon';
 import { Window } from './components/common/Window';
 
-import { MenuIconList } from './utils/MenuIconList';
+import { MenuIconListLeft } from './utils/MenuIconList';
+import { MenuIconListRight } from './utils/MenuIconList';
 import { MenuLeftItems } from './utils/MenuList/MenuLeftItems';
 import { MenuRightItems } from './utils/MenuList/MenuRightItems';
 
@@ -88,13 +89,23 @@ const App = () => {
           }
 
           <C.MenuBottom>
-            {MenuIconList.map((item, index) => (
-              <MenuIcon
-                key={index}
-                icon={item.icon}
-                onClick={handleWindowOpen}
-              />
-            ))}
+            <>
+              {MenuIconListLeft.map((item, index) => (
+                <MenuIcon
+                  key={index}
+                  icon={item.icon}
+                  onClick={handleWindowOpen}
+                />
+              ))}
+              <C.Border></C.Border>
+              {MenuIconListRight.map((item, index) => (
+                <MenuIcon
+                  key={index}
+                  icon={item.icon}
+                  onClick={handleWindowOpen}
+                />
+              ))}
+            </>
           </C.MenuBottom>
         </>
         }

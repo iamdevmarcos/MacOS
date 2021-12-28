@@ -81,3 +81,11 @@ export const MenuBottom = styled.div`
     border-radius:10px;
     display:flex;
 `;
+
+export const Border = styled.div`
+    border:0.2px solid #25CE3A;
+    border-radius:10px;
+    background-color: #25CE3A;
+    margin:10px 0px;
+    opacity:0.4;
+`;
