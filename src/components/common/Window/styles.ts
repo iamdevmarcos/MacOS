@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     background-color:#FEF5EC;
-    width:600px;
+    width:700px;
     height:75vh;
     position:relative;
     bottom:20px;
@@ -16,7 +16,6 @@ export const Top = styled.div`
     padding:10px 10px;
     background-color:#E9DEE0;
     border-radius: 10px 10px 0px 0px;
-    transition:all ease-in 1s;
 
     div {
         display:flex;
