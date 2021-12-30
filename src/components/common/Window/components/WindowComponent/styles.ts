@@ -5,8 +5,31 @@ export const Container = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content: center;
+
+    .githubProfile {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+
+        img {
+            width:150px;
+            height:150px;
+            border-radius:50%;
+        }
+
+        p {
+            font-size:30px;
+        }
+
+        hr {
+            width:300px;
+            height:0.2px;
+            background-color: #400EAD;
+        }
+    }
     
-    img {
+    .componentImage {
         width:150px;
         height:150px;
     }

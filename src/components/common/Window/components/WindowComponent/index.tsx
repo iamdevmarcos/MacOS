@@ -8,15 +8,23 @@ export const WindowComponent = ({ name }: Props) => {
     return (
         <C.Container>
             {name === 'github_profile' &&
-                <>
-                    <img src={`/assets/images/icons/appicons/${name}.png`} alt="icon" />
-                    <p>{name}</p>
-                </>
+                <div className="githubProfile">
+                    <img
+                        className="profileImage"
+                        src="/assets/images/logo.png"
+                        alt="logo"
+                    />
+                    <p>About this Developer</p><hr />
+                </div>
             }
 
             {name !== 'github_profile' &&
                 <>
-                    <img src={`/assets/images/icons/appicons/${name}.png`} alt="icon" />
+                    <img
+                        className="componentImage"
+                        src={`/assets/images/icons/appicons/${name}.png`}
+                        alt="icon"
+                    />
                     <p>App coming soon!</p>
                 </>
             }
