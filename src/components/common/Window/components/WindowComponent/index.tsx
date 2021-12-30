@@ -14,7 +14,20 @@ export const WindowComponent = ({ name }: Props) => {
                         src="/assets/images/logo.png"
                         alt="logo"
                     />
-                    <p>About this Developer</p><hr />
+                    <p className="profileAbout">About this Developer</p>
+                    <div className="profileDesc">
+                        <span className="profileDescTitle">Hey, I'm Marcos!</span>
+                        <span className='profileDescItem'>Javascript • React • Node.js</span>
+                        <span className='profileDescItem'>I'm solving problems with my knowledge</span>
+                        <span className='profileDescFooter'>
+                            <a
+                                href="https://github.com/iamdevmarcos/"
+                                target="_blank"
+                            >
+                                Follow me on GitHub
+                            </a>
+                        </span>
+                    </div>
                 </div>
             }
 

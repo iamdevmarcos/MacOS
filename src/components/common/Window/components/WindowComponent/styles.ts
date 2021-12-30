@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: center;
 
     .githubProfile {
+        height: calc(75vh - 45px);
         display:flex;
         flex-direction: column;
         align-items:center;
@@ -18,14 +19,42 @@ export const Container = styled.div`
             border-radius:50%;
         }
 
-        p {
-            font-size:30px;
+        .profileAbout {
+            font-size:23px;
+            border-bottom:1px solid rgba(0, 0, 0, 0.2);
+            padding-bottom:5px;
         }
 
-        hr {
-            width:300px;
-            height:0.2px;
-            background-color: #400EAD;
+        .profileDesc{
+            display:flex;
+            flex-direction: column;
+            align-items:center;
+            justify-content: center;
+            margin-bottom:10px;
+
+            .profileDescTitle {
+                font-weight:bold;
+                font-size:30px;
+                color:#000;
+            }
+
+            .profileDescItem {
+                margin-top:15px;
+                color:#000;
+                font-size:20px;
+            }
+
+            .profileDescFooter {
+                margin-top:15px;
+                color:#400EA8;
+                font-weight:bold;
+                font-size:20px;
+
+                a {
+                    text-decoration:none;
+                    border-bottom:1px solid #e1e1e1;
+                }
+            }
         }
     }
     
