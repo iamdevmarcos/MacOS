@@ -1,6 +1,8 @@
 import * as C from './styles';
 import { WindowIcon } from '../../../utils/WindowIcons';
 
+import { WindowComponent } from './components/WindowComponent';
+
 import Draggable from 'react-draggable';
 
 type Props = {
@@ -26,8 +28,9 @@ export const Window = ({ name, closeWindow }: Props) => {
 
                 <C.Body>
                     <div className="content">
-                        <p>{name}</p>
-                        <p>Coming Soon!</p>
+                        {name !== 'none' &&
+                            <WindowComponent name={name} />
+                        }
                     </div>
                 </C.Body>
             </C.Container>
