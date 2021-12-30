@@ -5,13 +5,15 @@ export const Container = styled.div`
     flex-direction: column;
     align-items:center;
     justify-content: center;
+    /* background-color:#0000FF; */
 
     .githubProfile {
-        height: calc(75vh - 45px);
         display:flex;
         flex-direction: column;
         align-items:center;
         justify-content: center;
+        /* background-color:#FF0000;
+        width:600px; */
 
         img {
             width:150px;
