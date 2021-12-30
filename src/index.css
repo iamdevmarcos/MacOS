@@ -1,9 +1,7 @@
 body {
   margin: 0;
   overflow:hidden;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Work Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* cursor:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
