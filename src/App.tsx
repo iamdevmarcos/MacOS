@@ -19,6 +19,8 @@ const App = () => {
 
   const [windowOpenName, setWindowOpenName] = useState('none');
 
+  const handleWindowClose = () => setWindowOpenName('none');
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -85,7 +87,10 @@ const App = () => {
           </C.MenuTop>
     
           {windowOpenName !== 'none' &&
-            <Window name={windowOpenName} />
+            <Window
+              name={windowOpenName}
+              closeWindow={handleWindowClose}
+            />
           }
 
           <C.MenuBottom>

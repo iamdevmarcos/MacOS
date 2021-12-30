@@ -5,9 +5,10 @@ import Draggable from 'react-draggable';
 
 type Props = {
     name: string;
+    closeWindow: () => void
 }
 
-export const Window = ({ name }: Props) => {
+export const Window = ({ name, closeWindow }: Props) => {
     return (
         <Draggable>
             <C.Container>
@@ -16,6 +17,7 @@ export const Window = ({ name }: Props) => {
                         <div
                             style={{backgroundColor:`${item.bgColor}`}}
                             key={index}
+                            onClick={closeWindow}
                         >
                             <img src={`/assets/images/icons/window/${item.title}.png`} alt="" />
                         </div>
