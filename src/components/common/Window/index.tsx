@@ -4,19 +4,16 @@ import { WindowIcon } from '../../../utils/WindowIcons';
 import Draggable from 'react-draggable';
 
 type Props = {
-    close: (value: boolean) => void;
+    name: string;
 }
 
-export const Window = ({ close }: Props) => {
-    const handleCloseWindow = () => close(false);
-
+export const Window = ({ name }: Props) => {
     return (
         <Draggable>
             <C.Container>
                 <C.Top>
                     {WindowIcon.map((item, index) => (
                         <div
-                            onClick={handleCloseWindow}
                             style={{backgroundColor:`${item.bgColor}`}}
                             key={index}
                         >
@@ -27,6 +24,7 @@ export const Window = ({ close }: Props) => {
 
                 <C.Body>
                     <div className="content">
+                        <p>{name}</p>
                         <p>Coming Soon!</p>
                     </div>
                 </C.Body>

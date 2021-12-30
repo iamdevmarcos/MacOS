@@ -17,9 +17,7 @@ const App = () => {
   const [welcomeScreen, setWelcomeScreen] = useState(false);
   const [welcomeScreenFadeOut, setWelcomeScreenFadeOut] = useState(false);
 
-  const [windowOpen, setWindowOpen] = useState(false);
-
-  const handleWindowOpen = () => setWindowOpen(true);
+  const [windowOpenName, setWindowOpenName] = useState('none');
 
   useEffect(() => {
     setTimeout(() => {
@@ -86,8 +84,8 @@ const App = () => {
             </C.MenuTopRight>
           </C.MenuTop>
     
-          {windowOpen &&
-            <Window close={setWindowOpen} />
+          {windowOpenName !== 'none' &&
+            <Window name={windowOpenName} />
           }
 
           <C.MenuBottom>
@@ -96,7 +94,7 @@ const App = () => {
                 <MenuIcon
                   key={index}
                   icon={item.icon}
-                  onClick={handleWindowOpen}
+                  onClick={e=>setWindowOpenName(item.icon)}
                 />
               ))}
               <C.Border></C.Border>
@@ -104,7 +102,7 @@ const App = () => {
                 <MenuIcon
                   key={index}
                   icon={item.icon}
-                  onClick={handleWindowOpen}
+                  onClick={e=>setWindowOpenName(item.icon)}
                 />
               ))}
             </>
