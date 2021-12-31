@@ -2,27 +2,34 @@ import styled from "styled-components";
 
 export const Container = styled.div`
     display:flex;
-    flex-direction: column;
-    align-items:center;
+    flex-direction:column;
+    align-items: center;
     justify-content: center;
-    /* background-color:#0000FF; */
+    color:#000;
+    height: calc(75vh - 35px);
+
+    .comingSoon {
+        font-size:50px;
+        font-weight:bold;
+    }
 
     .githubProfile {
         display:flex;
         flex-direction: column;
         align-items:center;
         justify-content: center;
-        /* background-color:#FF0000;
-        width:600px; */
+        width:100%;
+        height:100%;
+        line-height:40px;
 
         img {
-            width:150px;
-            height:150px;
+            width:200px;
+            height:200px;
             border-radius:50%;
         }
 
         .profileAbout {
-            font-size:23px;
+            font-size:30px;
             border-bottom:1px solid rgba(0, 0, 0, 0.2);
             padding-bottom:5px;
         }
@@ -36,18 +43,19 @@ export const Container = styled.div`
 
             .profileDescTitle {
                 font-weight:bold;
-                font-size:30px;
+                font-size:40px;
                 color:#000;
             }
 
             .profileDescItem {
-                margin-top:15px;
+                margin-top:60px;
                 color:#000;
                 font-size:20px;
+                text-align:center;
             }
 
             .profileDescFooter {
-                margin-top:15px;
+                margin-top:40px;
                 color:#400EA8;
                 font-weight:bold;
                 font-size:20px;
@@ -63,5 +71,42 @@ export const Container = styled.div`
     .componentImage {
         width:150px;
         height:150px;
+    }
+
+    @media(max-width: 1440px) {
+        .githubProfile {
+            /* background-color:#FF0000; */
+            line-height:30px;
+
+            img {
+                width:120px;
+                height:120px;
+                border-radius:50%;
+            }
+
+            .profileAbout {
+                font-size:23px;
+                border-bottom:1px solid rgba(0, 0, 0, 0.2);
+                padding-bottom:5px;
+            }
+
+            .profileDesc{
+                .profileDescTitle {
+                    font-weight:bold;
+                    font-size:40px;
+                    color:#000;
+                }
+
+                .profileDescItem {
+                    color:#000;
+                    font-size:21.5px;
+                    text-align:center;
+                }
+
+                .profileDescFooter {
+                    margin-top:25px;
+                }
+            }
+        }
     }
 `;

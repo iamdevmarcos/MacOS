@@ -45,19 +45,4 @@ export const Body = styled.div`
     justify-content: center;
     /* background-color: #FF0000;
     opacity:0.2; */
-
-    .content {
-        display:flex;
-        flex-direction:column;
-        align-items: center;
-        justify-content: center;
-        color:#FFF;
-        height: calc(75vh - 35px);
-
-        p {
-            color:#000;
-            font-size:50px;
-            font-weight:bold;
-        }
-    }
 `;

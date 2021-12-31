@@ -27,11 +27,9 @@ export const Window = ({ name, closeWindow }: Props) => {
                 </C.Top>
 
                 <C.Body>
-                    <div className="content">
-                        {name !== 'none' &&
-                            <WindowComponent name={name} />
-                        }
-                    </div>
+                    {name !== 'none' &&
+                        <WindowComponent name={name} />
+                    }
                 </C.Body>
             </C.Container>
         </Draggable>
