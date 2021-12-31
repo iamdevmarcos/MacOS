@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://macos-iamdevmarcos.vercel.app/" target="_blank">
-    <img src="./assets/Project.gif" width="550">
+    <img src="./public/assets/Project.gif" width="550">
   </a>
 </p>
 
