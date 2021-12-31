@@ -1,5 +1,7 @@
 <p align="center">
-    <img src="/assets/Project.gif">
+  <a href="https://macos-iamdevmarcos.vercel.app/" target="_blank">
+    <img src="./assets/Project.gif" width="550">
+  </a>
 </p>
 
 # macOS with ReactJS
