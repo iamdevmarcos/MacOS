@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="/assets/Project.gif" width="550">
+    <img src="/assets/Project.gif">
 </p>
 
 # macOS with ReactJS
