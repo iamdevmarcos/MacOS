@@ -1,1 +1,1 @@
-# macOS Monterey with ReactJS
+# macOS with ReactJS
