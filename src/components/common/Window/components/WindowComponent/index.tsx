@@ -17,7 +17,7 @@ export const WindowComponent = ({ name }: Props) => {
                     <p className="profileAbout">About this Developer</p>
                     <div className="profileDesc">
                         <span className="profileDescTitle">Hey, I'm Marcos!</span>
-                        <span className='profileDescItem'>Javascript • React • Node.js <br />I'm solving problems with my knowledge</span>
+                        <span className='profileDescItem'>Javascript • React • Node.js <br />I solve problems with my knowledge</span>
                         <span className='profileDescFooter'>
                             <a
                                 href="https://github.com/iamdevmarcos/"
