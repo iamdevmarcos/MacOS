@@ -11,12 +11,6 @@ export const Container = styled.div`
     display:flex;
     align-items:center;
     justify-content:center;
-
-    // -webkit-filter: blur(20px);
-    // -moz-filter: blur(20px);
-    // -o-filter: blur(20px);
-    // -ms-filter: blur(20px);
-    // filter:blur(20px);
 `;
 
 export const MenuTop = styled.div`
@@ -28,6 +22,7 @@ export const MenuTop = styled.div`
     display:flex;
     align-items:center;
     justify-content:space-between;
+    font-weight:500;
 `;
 
 export const MenuTopLeft = styled.div`
