@@ -8,6 +8,7 @@ export const Container = styled.div`
     color:#000;
     height: calc(75vh - 35px);
 
+    /* Github Profile */
     .comingSoon {
         font-size:50px;
         font-weight:bold;
@@ -106,6 +107,42 @@ export const Container = styled.div`
                 .profileDescFooter {
                     margin-top:25px;
                 }
+            }
+        }
+    }
+
+    /* Github Folder */
+    .githubFolder {
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: center;
+        width:100%;
+        height:100%;
+        text-align:center;
+
+        img {
+            width:150px;
+            height:150px;
+        }
+
+        .githubFolderTitle {
+            font-weight:bold;
+            font-size:35px;
+        }
+
+        .githubFolderFeedBack {
+            font-weight:500;
+            font-size:20px;
+        }
+
+        .githubFolderLink {
+            font-weight:800;
+            font-size:25px;
+            border-bottom:1px solid rgba(0, 0, 0, 0.2);
+
+            a {
+                text-decoration:none;
             }
         }
     }

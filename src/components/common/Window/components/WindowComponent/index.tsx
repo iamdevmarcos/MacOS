@@ -30,7 +30,27 @@ export const WindowComponent = ({ name }: Props) => {
                 </div>
             }
 
-            {name !== 'github_profile' &&
+            {name === 'github_folder' &&
+                <div className="githubFolder">
+                    <img
+                        className="componentImage"
+                        src={`/assets/images/icons/appicons/github_folder.png`}
+                        alt="icon"
+                    />
+                    <p className="githubFolderTitle">You can see the source code <br/> by clicking below.</p>
+                    <p className="githubFolderFeedBack">I will be very happy if you give your feedback on this project 😄</p>
+                    <p className="githubFolderLink">
+                        <a
+                            href="https://github.com/iamdevmarcos/macOS"
+                            target="_blank"
+                        >
+                            View source code
+                        </a>
+                    </p>
+                </div>
+            }
+
+            {name !== 'github_profile' && name !== 'github_folder' &&
                 <>
                     <img
                         className="componentImage"
