@@ -8,7 +8,7 @@
 > a clone of the macOS interface, made with **ReactJS**.
 
 this open source project was made for studies, and aims to replicate the macOS interface. <br />
-Be sure to send your feedback.
+Be sure to send your feedback...
 
 ## Technology stack
 
