@@ -1,15 +1,15 @@
-import { useState, useEffect } from 'react';
-import * as C from './App.styles';
+import { useState, useEffect } from "react";
+import * as C from "./App.styles";
 
-import { Loading } from './components/common/Loading';
-import { WelcomeScreen } from './components/common/WelcomeScreen';
-import { MenuIcon } from './components/screen/MenuIcon';
-import { Window } from './components/common/Window';
+import { Loading } from "./components/common/Loading";
+import { WelcomeScreen } from "./components/common/WelcomeScreen";
+import { MenuIcon } from "./components/screen/MenuIcon";
+import { Window } from "./components/common/Window";
 
-import { MenuIconListLeft } from './utils/MenuIconList';
-import { MenuIconListRight } from './utils/MenuIconList';
-import { MenuLeftItems } from './utils/MenuList/MenuLeftItems';
-import { MenuRightItems } from './utils/MenuList/MenuRightItems';
+import { MenuIconListLeft } from "./data/MenuIconList";
+import { MenuIconListRight } from "./data/MenuIconList";
+import { MenuLeftItems } from "./utils/MenuList/MenuLeftItems";
+import { MenuRightItems } from "./utils/MenuList/MenuRightItems";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
@@ -17,9 +17,9 @@ const App = () => {
   const [welcomeScreen, setWelcomeScreen] = useState(false);
   const [welcomeScreenFadeOut, setWelcomeScreenFadeOut] = useState(false);
 
-  const [windowOpenName, setWindowOpenName] = useState('none');
+  const [windowOpenName, setWindowOpenName] = useState("none");
 
-  const handleWindowClose = () => setWindowOpenName('none');
+  const handleWindowClose = () => setWindowOpenName("none");
 
   useEffect(() => {
     setTimeout(() => {
@@ -30,7 +30,7 @@ const App = () => {
     setTimeout(() => {
       setLoadingFadeOut(true);
     }, 3000);
-    
+
     setTimeout(() => {
       setWelcomeScreenFadeOut(true);
     }, 8000);
@@ -40,19 +40,19 @@ const App = () => {
     }, 9000);
   }, []);
 
-  if(loading) {
-    return (<Loading fadeOut={loadingFadeOut} />);
+  if (loading) {
+    return <Loading fadeOut={loadingFadeOut} />;
   }
 
-  if(!loading && welcomeScreen === true) {
-    return (<WelcomeScreen fadeOut={welcomeScreenFadeOut} />);
+  if (!loading && welcomeScreen === true) {
+    return <WelcomeScreen fadeOut={welcomeScreenFadeOut} />;
   }
 
   return (
-      <C.Container>
-        {!loading && !welcomeScreen &&
+    <C.Container>
+      {!loading && !welcomeScreen && (
         <>
-            <C.MenuTop>
+          <C.MenuTop>
             <C.MenuTopLeft>
               <C.MenuTopList>
                 <li>
@@ -76,7 +76,7 @@ const App = () => {
                 </li>
                 <a href="https://github.com/iamdevmarcos/macOS" target="_blank">
                   <li>
-                      <img src="/assets/images/icons/github.png" />
+                    <img src="/assets/images/icons/github.png" />
                   </li>
                 </a>
                 {MenuRightItems.map((item, index) => (
@@ -85,13 +85,10 @@ const App = () => {
               </C.MenuTopList>
             </C.MenuTopRight>
           </C.MenuTop>
-    
-          {windowOpenName !== 'none' &&
-            <Window
-              name={windowOpenName}
-              closeWindow={handleWindowClose}
-            />
-          }
+
+          {windowOpenName !== "none" && (
+            <Window name={windowOpenName} closeWindow={handleWindowClose} />
+          )}
 
           <C.MenuBottom>
             <>
@@ -99,7 +96,7 @@ const App = () => {
                 <MenuIcon
                   key={index}
                   icon={item.icon}
-                  onClick={e=>setWindowOpenName(item.icon)}
+                  onClick={(e) => setWindowOpenName(item.icon)}
                 />
               ))}
               <C.Border></C.Border>
@@ -107,15 +104,15 @@ const App = () => {
                 <MenuIcon
                   key={index}
                   icon={item.icon}
-                  onClick={e=>setWindowOpenName(item.icon)}
+                  onClick={(e) => setWindowOpenName(item.icon)}
                 />
               ))}
             </>
           </C.MenuBottom>
         </>
-        }
-      </C.Container>
-    ); 
-  }
+      )}
+    </C.Container>
+  );
+};
 
 export default App;
