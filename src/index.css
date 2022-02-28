@@ -1,13 +1,5 @@
 body {
   margin: 0;
-  overflow:hidden;
-  font-family: 'Work Sans', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  /* cursor:url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/9632/happy.png"), auto; */
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  overflow: hidden;
+  font-family: "Work Sans", sans-serif;
 }
