@@ -8,8 +8,8 @@ import { Window } from "./components/common/Window";
 
 import { MenuIconListLeft } from "./data/MenuIconList";
 import { MenuIconListRight } from "./data/MenuIconList";
-import { MenuLeftItems } from "./utils/MenuList/MenuLeftItems";
-import { MenuRightItems } from "./utils/MenuList/MenuRightItems";
+import { MenuLeftItems } from "./data/MenuList/MenuLeftItems";
+import { MenuRightItems } from "./data/MenuList/MenuRightItems";
 
 const App = () => {
   const [loading, setLoading] = useState(true);
