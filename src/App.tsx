@@ -21,6 +21,13 @@ const App = () => {
 
   const handleWindowClose = () => setWindowOpenName("none");
 
+  const handleOpenApp = (item: string) => {
+    const audio = new Audio("/assets/sounds/click.mp3");
+    audio.currentTime = 1;
+    audio.play();
+    setWindowOpenName(item);
+  };
+
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
@@ -96,7 +103,7 @@ const App = () => {
                 <MenuIcon
                   key={index}
                   icon={item.icon}
-                  onClick={(e) => setWindowOpenName(item.icon)}
+                  onClick={() => handleOpenApp(item.icon)}
                 />
               ))}
               <C.Border></C.Border>
@@ -104,7 +111,7 @@ const App = () => {
                 <MenuIcon
                   key={index}
                   icon={item.icon}
-                  onClick={(e) => setWindowOpenName(item.icon)}
+                  onClick={() => handleOpenApp(item.icon)}
                 />
               ))}
             </>
