@@ -11,6 +11,8 @@ import { MenuIconListRight } from "./data/MenuIconList";
 import { MenuLeftItems } from "./data/MenuList/MenuLeftItems";
 import { MenuRightItems } from "./data/MenuList/MenuRightItems";
 
+import { StarterSong } from "./components/common/StarterSong";
+
 const App = () => {
   const startSong = new Audio("/assets/sounds/start-song.mp3");
 
@@ -52,6 +54,8 @@ const App = () => {
 
   return (
     <C.Container>
+      <StarterSong />
+
       {!loading && !welcomeScreen && (
         <>
           <C.MenuTop>
