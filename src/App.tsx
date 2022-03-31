@@ -12,6 +12,8 @@ import { MenuLeftItems } from "./data/MenuList/MenuLeftItems";
 import { MenuRightItems } from "./data/MenuList/MenuRightItems";
 
 const App = () => {
+  const startSong = new Audio("/assets/sounds/start-song.mp3");
+
   const [loading, setLoading] = useState(true);
   const [loadingFadeOut, setLoadingFadeOut] = useState(false);
   const [welcomeScreen, setWelcomeScreen] = useState(false);
@@ -74,7 +76,7 @@ const App = () => {
                 <li>
                   <img src="/assets/images/icons/search.png" />
                 </li>
-                <a href="https://github.com/iamdevmarcos/macOS" target="_blank">
+                <a href="https://github.com/iamdevmarcos/macOS">
                   <li>
                     <img src="/assets/images/icons/github.png" />
                   </li>
